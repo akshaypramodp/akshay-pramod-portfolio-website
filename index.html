@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshay P | AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Akshay P, Aspiring AI/ML Engineer and Operations Engineer.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Home Page Specific Styles */
+    .hero {
+      min-height: calc(100vh - 70px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+
+    .hero-container {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      max-width: 1000px;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: var(--shadow-lg);
+      border: 4px solid #fff;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .highlights {
+      background-color: #fff;
+      padding: 5rem 0;
+    }
+
+    .highlight-icon {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      .btn-group {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Akshay P</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container fade-in">
+      <div class="hero-content">
+        <h1>Hi, I'm Akshay P</h1>
+        <div class="hero-subtitle">Aspiring AI/ML Engineer | Operations Engineer | Problem Solver</div>
+        <p class="hero-text">
+          I am an aspiring AI/ML Engineer currently learning Machine Learning at Brototype. With over 4 years of
+          experience as an Operations Engineer at 6D Technologies, I have worked on large-scale telecom systems
+          supporting critical infrastructure. I am passionate about solving real-world problems using programming,
+          artificial intelligence, and machine learning.
+        </p>
+        <div class="btn-group">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+          <a href="https://docs.google.com/document/d/1Ic0UCB2RdyCVwe9C10wcypvzo18QJWpw/edit?usp=drive_link&ouid=106035150962285005236&rtpof=true&sd=true" target="_blank" class="btn btn-secondary"><i class="fas fa-download" style="margin-right: 8px;"></i>Download
+            Resume</a>
+        </div>
+      </div>
+      <div class="hero-image-container fade-in">
+        <img src="assets/images/profile.jpeg" alt="Akshay P" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights">
+    <div class="container">
+      <h2 class="text-center fade-in">Quick Highlights</h2>
+      <div class="grid grid-2 mt-3 p-0">
+        <!-- Experience Card -->
+        <a href="experience.html" class="card text-center fade-in">
+          <i class="fas fa-server highlight-icon"></i>
+          <h3 class="card-title">Experience</h3>
+          <p>4+ years as an Operations Engineer managing large-scale telecom BSS infrastructure.</p>
+        </a>
+
+        <!-- Skills Card -->
+        <a href="skills.html" class="card text-center fade-in">
+          <i class="fas fa-brain highlight-icon"></i>
+          <h3 class="card-title">Skills</h3>
+          <p>Proficient in Python, Shell Scripting, Linux, and Cloud Technologies.</p>
+        </a>
+
+        <!-- Projects Card -->
+        <a href="projects.html" class="card text-center fade-in">
+          <i class="fas fa-laptop-code highlight-icon"></i>
+          <h3 class="card-title">Projects</h3>
+          <p>Exploring web development and AI/ML, bringing robust solutions to life.</p>
+        </a>
+
+        <!-- Learning Journey Card -->
+        <a href="about.html" class="card text-center fade-in">
+          <i class="fas fa-graduation-cap highlight-icon"></i>
+          <h3 class="card-title">Learning Journey</h3>
+          <p>Transitioning into Artificial Intelligence and Machine Learning at Brototype.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/akshaypramodp" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/akshaypramodp" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:akshaypramod107@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2026 Akshay P. Built with modern web standards.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

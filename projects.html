@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Akshay P</title>
+  <meta name="description" content="Projects and achievements of Akshay P.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .page-header {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    .projects-section {
+      padding: 5rem 0;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .project-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-5px);
+    }
+
+    .project-img-placeholder {
+      height: 180px;
+      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 3rem;
+    }
+
+    .project-img-placeholder.web {
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    }
+
+    .project-content {
+      padding: 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-role {
+      font-size: 0.95rem;
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .project-desc {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      flex: 1;
+    }
+
+    .project-achievements {
+      margin-bottom: 1.5rem;
+    }
+
+    .project-achievements ul {
+      list-style-type: disc;
+      margin-left: 1.2rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .project-tech {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .tech-badge {
+      font-size: 0.8rem;
+      background: #e2e8f0;
+      color: var(--text-primary);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .project-links {
+      margin-top: auto;
+      display: flex;
+      gap: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Akshay P</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="fade-in">Featured Projects</h1>
+    </div>
+  </header>
+
+  <!-- Projects Content -->
+  <section class="projects-section">
+    <div class="container">
+
+      <div class="grid grid-2">
+
+        <!-- Project 1: Safaricom -->
+        <div class="project-card fade-in">
+          <div class="project-img-placeholder">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Safaricom Ethiopia BSS Project</h3>
+            <div class="project-role">Operations Engineer</div>
+            <p class="project-desc">
+              Provided critical L1, L2, and L3 support for highly-available telecom BSS systems. Ensured consistent
+              system uptime, executed precise software deployments, conducted rigorous sanity testing, and rapidly
+              resolved complex production issues.
+            </p>
+            <div class="project-achievements">
+              <h4>Achievements:</h4>
+              <ul>
+                <li>Maintained 99.9% system uptime</li>
+                <li>Successfully supported the national telecom service launch in Ethiopia</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-badge">Linux</span>
+              <span class="tech-badge">Oracle SQL</span>
+              <span class="tech-badge">Python Scripts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: STC -->
+        <div class="project-card fade-in">
+          <div class="project-img-placeholder">
+            <i class="fas fa-server"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">STC Saudi BSS Project</h3>
+            <div class="project-role">Operations Engineer (L3 Support)</div>
+            <p class="project-desc">
+              Provided top-tier L3 level support for the Saudi Telecom Company infrastructure. Ensured persistent
+              application stability, deep-level issue diagnosis, and resolved core system architectural issues
+              efficiently.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Telecom BSS</span>
+              <span class="tech-badge">Incident Management</span>
+              <span class="tech-badge">Log Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Vodacom -->
+        <div class="project-card fade-in">
+          <div class="project-img-placeholder">
+            <i class="fas fa-globe-africa"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Vodacom DRC BSS Project</h3>
+            <div class="project-role">Implementation & Deployment Support</div>
+            <p class="project-desc">
+              Currently actively involved in the implementation and precise deployment phases. Supporting extensive BSS
+              application setups, verifying robust system readiness, and managing structural deployment architectures
+              before public go-live.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Deployment Strategies</span>
+              <span class="tech-badge">System Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Amazon Clone -->
+        <div class="project-card fade-in">
+          <div class="project-img-placeholder web">
+            <i class="fab fa-amazon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Amazon Homepage Clone</h3>
+            <div class="project-role">Web Development Project</div>
+            <p class="project-desc">
+              A precise, responsive static clone of the complex Amazon.com homepage built entirely using modern HTML5
+              and pure CSS3 to firmly understand real-world e-commerce UI structures and advanced frontend layout
+              practices.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/akshaypramodp/Website/tree/main/Website_project" target="_blank"
+                class="btn btn-secondary" style="padding: 0.4rem 1rem; font-size: 0.9rem;">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/akshaypramodp" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/akshaypramodp" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:akshaypramod107@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2026 Akshay P. Built with modern web standards.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

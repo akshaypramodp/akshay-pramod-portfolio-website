@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Akshay P</title>
+  <meta name="description" content="Contact Akshay P for opportunities and collaboration.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .page-header {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    .contact-section {
+      padding: 5rem 0;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 4rem;
+    }
+
+    /* Contact Info */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .info-card {
+      background: var(--bg-card);
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .info-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-5px);
+    }
+
+    .info-icon {
+      font-size: 2rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    .info-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-card a,
+    .info-card p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .info-card a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Contact Form */
+    .contact-form-container {
+      background: var(--bg-card);
+      padding: 3rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: var(--font-family);
+      color: var(--text-primary);
+      transition: var(--transition);
+      background-color: #f8fafc;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      background-color: #fff;
+      box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .error-msg {
+      color: #e53e3e;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      display: none;
+    }
+
+    .success-msg {
+      background-color: #c6f6d5;
+      color: #2f855a;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      display: none;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    @media (max-width: 900px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Akshay P</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="fade-in">Get In Touch</h1>
+    </div>
+  </header>
+
+  <!-- Contact Content -->
+  <section class="container contact-section">
+
+    <!-- Info -->
+    <div class="contact-info fade-in">
+      <div class="info-card">
+        <i class="fas fa-envelope info-icon"></i>
+        <h3>Email</h3>
+        <a href="mailto:akshaypramod107@gmail.com">akshaypramod107@gmail.com</a>
+      </div>
+
+      <div class="info-card">
+        <i class="fas fa-phone-alt info-icon"></i>
+        <h3>Phone</h3>
+        <a href="tel:+917356520162">+91 7356520162</a>
+      </div>
+
+      <div class="info-card">
+        <i class="fas fa-map-marker-alt info-icon"></i>
+        <h3>Location</h3>
+        <p>Thrissur, Kerala, India</p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-form-container fade-in">
+      <h2 style="margin-bottom: 2rem;">Send a Message</h2>
+      <form id="contactForm" action="https://formspree.io/f/mzdjrpwn" method="POST" novalidate>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+          <div class="error-msg" id="nameError">Please enter your full name.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+          <div class="error-msg" id="emailError">Please enter a valid email address.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" class="form-control" placeholder="How can I help you?"
+            required>
+          <div class="error-msg" id="subjectError">Please enter a subject.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" class="form-control" placeholder="Your message here..."
+            required></textarea>
+          <div class="error-msg" id="messageError">Please enter your message.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        <div class="success-msg" id="successMsg">Thank you! Your message has been sent successfully.</div>
+
+      </form>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/akshaypramodp" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/akshaypramodp" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:akshaypramod107@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2026 Akshay P. Built with modern web standards.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Form Validation Logic
+    document.getElementById('contactForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const subject = document.getElementById('subject');
+      const message = document.getElementById('message');
+
+      const nameError = document.getElementById('nameError');
+      const emailError = document.getElementById('emailError');
+      const subjectError = document.getElementById('subjectError');
+      const messageError = document.getElementById('messageError');
+      const successMsg = document.getElementById('successMsg');
+      const submitBtn = this.querySelector('button[type="submit"]');
+
+      // Reset errors
+      [nameError, emailError, subjectError, messageError].forEach(el => el.style.display = 'none');
+      successMsg.style.display = 'none';
+
+      if (!name.value.trim()) {
+        nameError.style.display = 'block';
+        isValid = false;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
+        emailError.style.display = 'block';
+        isValid = false;
+      }
+
+      if (!subject.value.trim()) {
+        subjectError.style.display = 'block';
+        isValid = false;
+      }
+
+      if (!message.value.trim()) {
+        messageError.style.display = 'block';
+        isValid = false;
+      }
+
+      if (isValid) {
+        // Disable button during submission
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        try {
+          const formData = new FormData(this);
+          const response = await fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          if (response.ok) {
+            successMsg.style.display = 'block';
+            this.reset();
+            setTimeout(() => {
+              successMsg.style.display = 'none';
+            }, 5000);
+          } else {
+            alert('Oops! There was a problem submitting your form');
+          }
+        } catch (error) {
+          alert('Oops! There was a problem submitting your form');
+        } finally {
+          submitBtn.textContent = originalBtnText;
+          submitBtn.disabled = false;
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
